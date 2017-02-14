@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HHSegmentedControlProtocol.h"
+
 @class HHHorizontalPagingView;
 
 // 使用 allowPullToRefresh 结束刷新需要发出通知
@@ -27,13 +29,14 @@ extern NSString* kHHHorizontalTakeBackRefreshEndNotification;
 
 //segmentButtons
 - (CGFloat)segmentHeightInPagingView:(HHHorizontalPagingView *)pagingView;
-- (NSArray<UIButton*> *)segmentButtonsInPagingView:(HHHorizontalPagingView *)pagingView;
+- (UIView <HHSegmentedControlProtocol> *)segmentedControlView; 
+
 
 @optional
 // 非当前页点击segment
-- (void)pagingView:(HHHorizontalPagingView*)pagingView segmentDidSelected:(UIButton *)item atIndex:(NSInteger)selectedIndex;
-// 当前页点击segment
-- (void)pagingView:(HHHorizontalPagingView*)pagingView segmentDidSelectedSameItem:(UIButton *)item atIndex:(NSInteger)selectedIndex;
+
+- (void)pagingView:(HHHorizontalPagingView *)pagingView segmentedControlValueChangeTo:(id)value atIndex:(NSInteger)index;
+
 
 // 视图切换完成时调用 从哪里切换到哪里
 - (void)pagingView:(HHHorizontalPagingView*)pagingView didSwitchIndex:(NSInteger)aIndex to:(NSInteger)toIndex;
@@ -101,7 +104,7 @@ extern NSString* kHHHorizontalTakeBackRefreshEndNotification;
 /**
  *  切换视图
  */
-@property (nonatomic, strong, readonly) UIView *segmentView;
+@property (nonatomic, strong, readonly) UIView<HHSegmentedControlProtocol> *segmentView;
 
 
 /**

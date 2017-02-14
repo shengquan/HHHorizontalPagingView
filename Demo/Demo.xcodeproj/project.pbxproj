@@ -95,6 +95,7 @@
 		5CE9F33B1CF9740B00DB414B /* JYPagingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYPagingView.h; sourceTree = "<group>"; };
 		5CE9F3451CF9A71800DB414B /* ArtTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtTableViewController.h; sourceTree = "<group>"; };
 		5CE9F3461CF9A71800DB414B /* ArtTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtTableViewController.m; sourceTree = "<group>"; };
+		9D7597181E52ACF5003DED6D /* HHSegmentedControlProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSegmentedControlProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				5CE9F33B1CF9740B00DB414B /* JYPagingView.h */,
+				9D7597181E52ACF5003DED6D /* HHSegmentedControlProtocol.h */,
 				5CE9F3351CF9737300DB414B /* HHHorizontalPagingView.h */,
 				5CE9F3361CF9737300DB414B /* HHHorizontalPagingView.m */,
 				5C68B8B21DF2B9BC00F1C693 /* DynamicItem.h */,
